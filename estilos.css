@@ -1,0 +1,113 @@
+@import url(otrosEstilos.css);
+h2{color:green;}
+p{color:deeppink;}
+
+/*Comentrio en css*/
+/*
+selectores
+
+- selector Universal -> *
+- Tipo ó de Etiqueta -> p
+-Class -> .algo
+-Pseudo-Clases -> :link, :visited, :active, :hover
+-De atributo ->[herf]
+
+Selector Universal-> *
+*/
+/*{font-family: arial;}/*aplica una caracteristicas a todos los elementos*/
+
+/*Selector tipo o de Etiqueta: modifican concretamente del html*/
+span{color: darkgreen;}
+
+/* Selector class:*/
+span.subrayado{ text-decoration: underline;}
+
+/*Selector ID: solo se puede agregar a un elemento por documento  */
+#mayusculas {text-transform: uppercase;}
+
+/*selectores Pseudo-class*/
+a:link{color: aquamarine;}/*link no visitaso*/
+a:visited{color:coral;}/* link ya visitado*/
+a:hover{ font-weight: bold; text-decoration: none}/*cursor sobre el link*/
+a:active{ color:brown;} /* link presionado o dar click*/
+
+/*Selector de Atributo*/
+img[title]{width:200px; height: auto;}/* se aplica a todos los elementos img que tengan el atributo y valor espesifico , en este caso title*/
+
+
+/*FUENTE*/
+
+body{
+  /*font-family: arial, helvetica, sans-serif;
+  font-size: 14px; /*tamaño de la fuente+*/
+/*  font-weight: bold; /*grosor de la fuente*/
+  /*font-style: italic;/*premite modificar estilo de la fuenta*/
+/*  font-variant: small-caps;
+  line-height:36px; /*premite modificar el interlineado*/
+
+  /*Shorthand o metodo abreviado: aplica lo anterior en una sola línea*/
+  font: italic small-caps blod 25px/200%,arial,helvetica, sans-serif;
+
+}
+
+
+/* Texto*/
+
+p{
+  text-align: justify;/* left, center, right, justify*/
+  text-indent: 20px;/* número o con % */
+  text-transform: capitalize;/*lowercase, uppercase, capitalize*/
+  text-decoration: line-through;/*underline, overline, line-through, none */
+
+}
+a{
+  text-decoration: none;
+
+}
+img{
+  vertical-align: middle;/* baseline, top, middle, botton sub, sup*/
+}
+h2{
+  letter-spacing: 5px;
+  word-spacing: 20px;
+}
+
+/*FONDO*/
+/*body{
+  /*background-color: peachpuff;*/
+/*  background-image: url(../img/perro.jpg);
+  /*background-repeat: no-repeat;/*repeat , repeat-x, repeat-y no-repeat*/
+  /*background-position: 20% 50%;/*valores relativos o absolutos*/
+  /*background-attachment: fixed;
+
+}
+
+
+/*Cuadro*/
+#cuadro{
+  width: 200px;/*ancho del documento*/
+  height: 200px;/*define el alto del elemento*/
+  overflow: auto;/*scroll, hidden, visible, auto*/
+  background: lime;
+
+
+/*  border-width: 4px;
+  border-style: solid;
+  border-color: red;
+  */
+  border: 4px solid red;
+
+/* espacio entre el contenido y el borde*/
+/*  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 5px*/
+  padding:20px 50px 10px 5px; /*Arriba  derecha abajo izquierda*/
+
+/*  margin-top: 40px;
+  margin-right: 0px;
+  margin-bottom: 70px;
+  margin-left: 20px;*/
+  margin: 40px 0px 70px 20px;/*igual que en padding*/
+
+}
