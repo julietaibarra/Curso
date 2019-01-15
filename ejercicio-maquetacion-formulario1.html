@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Registro- IDESWEB</title>
+    <style >
+    body{
+      font-family: arial, helvetica, sans-serif;
+      width: 90%;
+      margin: 0 auto;
+    }
+    header{
+      text-align: center
+    }
+    h1, h2{font-family: georgia, serif;}
+    h1{font-size: 3em;}
+    fieldset{margin: 1em auto;}
+    legend{font-size: 1.2em;
+            font-weight: bold;
+          text-transform: uppercase;}
+    label{font-weight: bold;
+          display: block;}
+    input:focus, select:focus{background-color: yellow;}
+    input:hover, select:hover{background-color: red;}
+
+    #boton-crear{font-size: 2em; padding: 0.5em;}
+    .inline{display: inline;}
+    .centrado{text-align: center;}
+
+    </style>
+  </head>
+  <body>
+  <header>
+    <h1>iDESWEB</h1>
+    <h2>Formulario de registro</h2>
+  </header>
+  <form class="" action="" method="post">
+    <fieldset>
+      <legend>¿Quién eres?</legend>
+      <p>
+        <label for="nombre"> Nombre</label>
+        <input type="text" name="nombre" id="nombre" value="">
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" value="">
+      </p>
+
+      <p>
+        <label for="nombre"> Correo electronico</label>
+        <input type="text" name="correo"  id="correo" value="">
+      </p>
+
+      <p>
+        <label for="dia"> Fecha de nacimiento</label>
+        <select class="" name="dia" id="dia">
+          <option value="">Día</option>
+        </select>
+
+
+      <select class="" name="mes" id="mes">
+        <option value="">Año</option>
+      </select>
+
+      <select class="" name="anio" id="anio">
+        <option value="">Año</option>
+      </select>
+      </p>
+
+    </fieldset>
+    <fieldset>
+      <legend>¿De dónde eres?</legend>
+      <p>
+        <label for="ciudad">Ciudad</label>
+        <input type="text" name="ciudad" value="" id="ciudad">
+      </p>
+
+      <p>
+        <label for="cp">Código postal</label>
+        <input type="text" name="cp" id="cp" value="">
+      </p>
+
+      <p>
+        <label for="pais">País</label>
+        <select class="" name="pais">
+          <option value="">País</option>
+        </select>
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>¿Cómo quierse iniciar sesión</legend>
+      <p>
+        <label for="nomusu">Nombre de usuario</label>
+        <input type="text" name="nomusu" id="nomusu" value="">
+      </p>
+
+      <p>
+        <label for="contrasenia">Contraseña</label>
+        <input type="password" name="contrasenia" id="contrasenia" value="">
+      </p>
+
+      <p>
+        <label for="repcontrasenia"> Vuelve a escribir la contraseña</label>
+        <input type="password" name="repcontrasenia" id="repcontrasenia" value="">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Condiciones de registro</legend>
+      <p>
+        <label for="">Deseo recibir ofertas de iDESWEB</label>
+        <input type="radio" name="ofertas" id="ofertas1" value="1">
+        <label for="ofertas1" class="inline"> Una vez al día</label>
+        <input type="radio" name="ofertas" id="ofertas2" value="2">
+        <label for="ofertas2" class="inline">Una vez a la semana</label>
+        <input type="radio" name="ofertas" id="ofertas3" value="3">
+        <label for="ofertas3" class="inline">Una vez al mes</label>
+
+      </p>
+
+      <p>
+        <input type="checkbox" name="acepto"  id="acepto" value="">
+        <label for="acepto" class="inline">Acepto el acuerdo de servicios, la declaración de
+        privacidad y la declaración de uso de cookies </label>
+      </p>
+      </fieldset>
+
+      <p class="centrado">
+        <input type="submit" name="" value="Crear cuenta" id="boton-crear">
+      </p>
+
+
+  </form>
+
+  </body>
+</html>
